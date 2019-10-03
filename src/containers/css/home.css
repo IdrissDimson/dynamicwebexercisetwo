@@ -1,0 +1,28 @@
+.home {
+    text-align: center;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+
+    align-content: center;
+    justify-content: flex-end;
+
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 100%;
+}
+.header__item{
+    color:black;
+    font-size: 20px;
+    margin: 0 20px;
+    padding: 10px;
+}
+.header__item--active {
+    color:red;
+    background-color: yellow;
+}
+h2 {
+    text-transform: capitalize;
+}
