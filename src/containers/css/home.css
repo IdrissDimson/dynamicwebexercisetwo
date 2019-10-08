@@ -1,6 +1,4 @@
-.home {
-    text-align: center;
-}
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 .header {
     display: flex;
     flex-direction: row;
@@ -25,4 +23,82 @@
 }
 h2 {
     text-transform: capitalize;
+}
+h1, p, h2 {
+    text-align: center;
+}
+.move {
+    text-align: center;
+}
+.navigation {
+    font-size: 18px;
+    background-color: #ffd281;
+    box-shadow: 0px 0px 63px 0px rgba(0,0,0,0.35);
+    padding-bottom: 10px;
+}
+
+.navigation__menu {
+    list-style-type: none;
+    display: none;
+    width: 100%;
+
+    padding-inline-start: 0;
+}
+
+.navigation__link {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navigation__menu li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.navigation--toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.active {
+    display: block;
+}
+@media screen and (min-width: 768px) {
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .navigation__menu{
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .navigation__menu li {
+        margin: 0;
+    }
+
+    .navigation__link {
+        margin-left: 40px;
+    }
+
+    .navigation strong {
+        margin-top: 0;
+    }
+
+    .navigation--toggle {
+        display: none;
+    }
+
+    .navigation strong:hover,
+    .navigation__links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
 }
