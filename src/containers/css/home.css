@@ -1,4 +1,17 @@
 @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+
+a {
+    text-decoration: none;
+}
+h2 {
+    text-transform: capitalize;
+}
+h1, p, h2 {
+    text-align: center;
+}
+.active {
+    display: block;
+}
 .header {
     display: flex;
     flex-direction: row;
@@ -21,15 +34,6 @@
     color:red;
     background-color: #9c9fa0;
     border-radius: 25px;
-}
-a {
-    text-decoration: none;
-}
-h2 {
-    text-transform: capitalize;
-}
-h1, p, h2 {
-    text-align: center;
 }
 .move {
     text-align: center;
@@ -65,9 +69,6 @@ h1, p, h2 {
     right: 20px;
     cursor: pointer;
     font-size: 24px;
-}
-.active {
-    display: block;
 }
 @media screen and (min-width: 768px) {
     .navigation {
